@@ -7,9 +7,10 @@
     <title>Emergency Hotline Service</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
-<body class="bg-[#f5fff6] h-[100vh]">
+<body class="bg-[#f5fff6] pb-10">
     <header class="bg-white shadow">
         <div class="flex justify-between items-center py-3 px-10">
             <div class="flex justify-between items-center gap-2 ">
@@ -18,28 +19,197 @@
             </div>
             <div class="flex items-center gap-5">
                 <div class="flex items-center gap-2 bg-[#41ff6b1a] px-8 py-3 rounded-3xl">
-                <p class="font-extrabold">0</p>
-                <img class="h-7" src="./assets/heart.png" alt="">
-            </div>
-            <div class="flex items-center gap-2 bg-[#41ff6b1a] px-3 py-3 rounded-3xl">
-                <p class="font-extrabold">100</p>
-                <img class="h-7" src="./assets/coin.png" alt="">
-            </div>
-            <div class="flex font-semibold text-white bg-[#00a63e] px-6 py-3 rounded-3xl">
-                <p class="pr-2">0</p>
-                <p>Copy</p>
-            </div>
+                    <p class="font-extrabold">0</p>
+                    <img class="h-7" src="./assets/heart.png" alt="">
+                </div>
+                <div class="flex items-center gap-2 bg-[#41ff6b1a] px-3 py-3 rounded-3xl">
+                    <p class="font-extrabold">100</p>
+                    <img class="h-7" src="./assets/coin.png" alt="">
+                </div>
+                <div class="flex font-semibold text-white bg-[#00a63e] px-6 py-3 rounded-3xl">
+                    <p class="pr-2">0</p>
+                    <p>Copy</p>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <div class="text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-5">
-            <div class="flex justify-center">
-                <img class="h-20" src="./assets/logo-dark.png" alt="">
+        <section>
+            <div class="text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-5">
+                <div class="flex justify-center">
+                    <img class="h-20" src="./assets/logo-dark.png" alt="">
+                </div>
+                <h2 class="font-bold text-3xl text-white">Emergency Service Directory</h2>
+                <p class="font-semibold text-lg text-white">Government Emergency Services at Your Fingertip – A Project
+                    by Government of the People’s Republic of Bangladesh</p>
             </div>
-            <h2 class="font-bold text-3xl text-white">Emergency Service Directory</h2>
-            <p class="font-semibold text-lg text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
-        </div>
+        </section>
+        <!-- card section -->
+
+        <section class="w-11/12 mx-auto mt-8 grid grid-cols-12 gap-5">
+            <div class="col-span-9">
+                <div class="grid grid-cols-3 gap-5">
+                    <div class="bg-white shadow-sm p-4 rounded-xl">
+                        <div class="flex justify-between items-center">
+                            <img class="bg-[#ffe3e2] h-12 rounded-xl p-2" src="./assets/emergency.png" alt="">
+                            <img class="cursor-pointer" src="./assets/heart1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-lg pt-4">National Emergency Number</h2>
+                            <p class="text-[#5c5c5c]">National Emergency</p>
+                            <h2 class="font-bold text-2xl pt-2 pb-2">999</h2>
+                            <p class="text-[#5c5c5c] bg-[#f2f2f2] inline-block rounded-3xl px-4 py-2">All</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 pt-5">
+                            <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png" alt="">Copy</button>
+                            <button class="btn bg-[#00a63e] hover:bg-green-950 text-white rounded-lg"> <img src="./assets/call.png"
+                                    alt="">Call</button>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-sm p-4 rounded-xl">
+                        <div class="flex justify-between items-center">
+                            <img class="bg-[#ffe3e2] h-12 rounded-xl p-2" src="./assets/emergency.png" alt="">
+                            <img class="cursor-pointer" src="./assets/heart1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-lg pt-4">National Emergency Number</h2>
+                            <p class="text-[#5c5c5c]">National Emergency</p>
+                            <h2 class="font-bold text-2xl pt-2 pb-2">999</h2>
+                            <p class="text-[#5c5c5c] bg-[#f2f2f2] inline-block rounded-3xl px-4 py-2">All</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 pt-5">
+                            <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png" alt="">Copy</button>
+                            <button class="btn bg-[#00a63e] text-white rounded-lg"> <img src="./assets/call.png"
+                                    alt="">Call</button>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-sm p-4 rounded-xl">
+                        <div class="flex justify-between items-center">
+                            <img class="bg-[#ffe3e2] h-12 rounded-xl p-2" src="./assets/emergency.png" alt="">
+                            <img class="cursor-pointer" src="./assets/heart1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-lg pt-4">National Emergency Number</h2>
+                            <p class="text-[#5c5c5c]">National Emergency</p>
+                            <h2 class="font-bold text-2xl pt-2 pb-2">999</h2>
+                            <p class="text-[#5c5c5c] bg-[#f2f2f2] inline-block rounded-3xl px-4 py-2">All</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 pt-5">
+                            <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png" alt="">Copy</button>
+                            <button class="btn bg-[#00a63e] text-white rounded-lg"> <img src="./assets/call.png"
+                                    alt="">Call</button>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-sm p-4 rounded-xl">
+                        <div class="flex justify-between items-center">
+                            <img class="bg-[#ffe3e2] h-12 rounded-xl p-2" src="./assets/emergency.png" alt="">
+                            <img class="cursor-pointer" src="./assets/heart1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-lg pt-4">National Emergency Number</h2>
+                            <p class="text-[#5c5c5c]">National Emergency</p>
+                            <h2 class="font-bold text-2xl pt-2 pb-2">999</h2>
+                            <p class="text-[#5c5c5c] bg-[#f2f2f2] inline-block rounded-3xl px-4 py-2">All</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 pt-5">
+                            <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png" alt="">Copy</button>
+                            <button class="btn bg-[#00a63e] text-white rounded-lg"> <img src="./assets/call.png"
+                                    alt="">Call</button>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-sm p-4 rounded-xl">
+                        <div class="flex justify-between items-center">
+                            <img class="bg-[#ffe3e2] h-12 rounded-xl p-2" src="./assets/emergency.png" alt="">
+                            <img class="cursor-pointer" src="./assets/heart1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-lg pt-4">National Emergency Number</h2>
+                            <p class="text-[#5c5c5c]">National Emergency</p>
+                            <h2 class="font-bold text-2xl pt-2 pb-2">999</h2>
+                            <p class="text-[#5c5c5c] bg-[#f2f2f2] inline-block rounded-3xl px-4 py-2">All</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 pt-5">
+                            <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png" alt="">Copy</button>
+                            <button class="btn bg-[#00a63e] text-white rounded-lg"> <img src="./assets/call.png"
+                                    alt="">Call</button>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-sm p-4 rounded-xl">
+                        <div class="flex justify-between items-center">
+                            <img class="bg-[#ffe3e2] h-12 rounded-xl p-2" src="./assets/emergency.png" alt="">
+                            <img class="cursor-pointer" src="./assets/heart1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-lg pt-4">National Emergency Number</h2>
+                            <p class="text-[#5c5c5c]">National Emergency</p>
+                            <h2 class="font-bold text-2xl pt-2 pb-2">999</h2>
+                            <p class="text-[#5c5c5c] bg-[#f2f2f2] inline-block rounded-3xl px-4 py-2">All</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 pt-5">
+                            <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png" alt="">Copy</button>
+                            <button class="btn bg-[#00a63e] text-white rounded-lg"> <img src="./assets/call.png"
+                                    alt="">Call</button>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-sm p-4 rounded-xl">
+                        <div class="flex justify-between items-center">
+                            <img class="bg-[#ffe3e2] h-12 rounded-xl p-2" src="./assets/emergency.png" alt="">
+                            <img class="cursor-pointer" src="./assets/heart1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-lg pt-4">National Emergency Number</h2>
+                            <p class="text-[#5c5c5c]">National Emergency</p>
+                            <h2 class="font-bold text-2xl pt-2 pb-2">999</h2>
+                            <p class="text-[#5c5c5c] bg-[#f2f2f2] inline-block rounded-3xl px-4 py-2">All</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 pt-5">
+                            <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png" alt="">Copy</button>
+                            <button class="btn bg-[#00a63e] text-white rounded-lg"> <img src="./assets/call.png"
+                                    alt="">Call</button>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-sm p-4 rounded-xl">
+                        <div class="flex justify-between items-center">
+                            <img class="bg-[#ffe3e2] h-12 rounded-xl p-2" src="./assets/emergency.png" alt="">
+                            <img class="cursor-pointer" src="./assets/heart1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-lg pt-4">National Emergency Number</h2>
+                            <p class="text-[#5c5c5c]">National Emergency</p>
+                            <h2 class="font-bold text-2xl pt-2 pb-2">999</h2>
+                            <p class="text-[#5c5c5c] bg-[#f2f2f2] inline-block rounded-3xl px-4 py-2">All</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 pt-5">
+                            <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png" alt="">Copy</button>
+                            <button class="btn bg-[#00a63e] text-white rounded-lg"> <img src="./assets/call.png"
+                                    alt="">Call</button>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-sm p-4 rounded-xl">
+                        <div class="flex justify-between items-center">
+                            <img class="bg-[#ffe3e2] h-12 rounded-xl p-2" src="./assets/emergency.png" alt="">
+                            <img class="cursor-pointer" src="./assets/heart1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-bold text-lg pt-4">National Emergency Number</h2>
+                            <p class="text-[#5c5c5c]">National Emergency</p>
+                            <h2 class="font-bold text-2xl pt-2 pb-2">999</h2>
+                            <p class="text-[#5c5c5c] bg-[#f2f2f2] inline-block rounded-3xl px-4 py-2">All</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 pt-5">
+                            <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png" alt="">Copy</button>
+                            <button class="btn bg-[#00a63e] text-white rounded-lg"> <img src="./assets/call.png"
+                                    alt="">Call</button>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+
+            <div class="col-span-3 bg-white shadow-sm p-4 rounded-xl">
+                
+            </div>
+        </section>
     </main>
 
 
