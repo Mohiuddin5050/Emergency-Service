@@ -64,8 +64,8 @@
                         <div class="grid grid-cols-2 gap-2 pt-5">
                             <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png"
                                     alt="">Copy</button>
-                            <button id="call-btn-1" class="btn bg-[#00a63e] hover:bg-green-800 text-white rounded-lg"> <img
-                                    src="./assets/call.png" alt="">Call</button>
+                            <button class="btn call-btn-1 bg-[#00a63e] hover:bg-green-800 text-white rounded-lg">
+                                <img src="./assets/call.png" alt="">Call</button>
                         </div>
                     </div>
                     <div class="bg-white shadow-sm p-4 rounded-xl">
@@ -82,7 +82,7 @@
                         <div class="grid grid-cols-2 gap-2 pt-5">
                             <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png"
                                     alt="">Copy</button>
-                            <button class="btn bg-[#00a63e] hover:bg-green-950 text-white rounded-lg"> <img
+                            <button class="btn call-btn-1 bg-[#00a63e] hover:bg-green-800 text-white rounded-lg"> <img
                                     src="./assets/call.png" alt="">Call</button>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                         <div class="grid grid-cols-2 gap-2 pt-5">
                             <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png"
                                     alt="">Copy</button>
-                            <button class="btn bg-[#00a63e] hover:bg-green-950 text-white rounded-lg"> <img
+                            <button class="btn call-btn-1 bg-[#00a63e] hover:bg-green-800 text-white rounded-lg"> <img
                                     src="./assets/call.png" alt="">Call</button>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                         <div class="grid grid-cols-2 gap-2 pt-5">
                             <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png"
                                     alt="">Copy</button>
-                            <button class="btn bg-[#00a63e] hover:bg-green-950 text-white rounded-lg"> <img
+                            <button class="btn call-btn-1 bg-[#00a63e] hover:bg-green-800 text-white rounded-lg"> <img
                                     src="./assets/call.png" alt="">Call</button>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                         <div class="grid grid-cols-2 gap-2 pt-5">
                             <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png"
                                     alt="">Copy</button>
-                            <button class="btn bg-[#00a63e] hover:bg-green-950 text-white rounded-lg"> <img
+                            <button class="btn call-btn-1 bg-[#00a63e] hover:bg-green-800 text-white rounded-lg"> <img
                                     src="./assets/call.png" alt="">Call</button>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                         <div class="grid grid-cols-2 gap-2 pt-5">
                             <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png"
                                     alt="">Copy</button>
-                            <button class="btn bg-[#00a63e] hover:bg-green-950 text-white rounded-lg"> <img
+                            <button class="btn call-btn-1 bg-[#00a63e] hover:bg-green-800 text-white rounded-lg"> <img
                                     src="./assets/call.png" alt="">Call</button>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
                         <div class="grid grid-cols-2 gap-2 pt-5">
                             <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png"
                                     alt="">Copy</button>
-                            <button class="btn bg-[#00a63e] hover:bg-green-950 text-white rounded-lg"> <img
+                            <button class="btn call-btn-1 bg-[#00a63e] hover:bg-green-800 text-white rounded-lg"> <img
                                     src="./assets/call.png" alt="">Call</button>
                         </div>
                     </div>
@@ -191,7 +191,7 @@
                         <div class="grid grid-cols-2 gap-2 pt-5">
                             <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png"
                                     alt="">Copy</button>
-                            <button class="btn bg-[#00a63e] hover:bg-green-950 text-white rounded-lg"> <img
+                            <button class="btn call-btn-1 bg-[#00a63e] hover:bg-green-950 text-white rounded-lg"> <img
                                     src="./assets/call.png" alt="">Call</button>
                         </div>
                     </div>
@@ -209,7 +209,7 @@
                         <div class="grid grid-cols-2 gap-2 pt-5">
                             <button class="btn text-[#5c5c5c] rounded-lg"> <img src="./assets/copy.png"
                                     alt="">Copy</button>
-                            <button class="btn bg-[#00a63e] hover:bg-green-950 text-white rounded-lg"> <img
+                            <button class="btn call-btn-1 bg-[#00a63e] hover:bg-green-800 text-white rounded-lg"> <img
                                     src="./assets/call.png" alt="">Call</button>
                         </div>
                     </div>
@@ -217,14 +217,20 @@
                 </div>
             </div>
 
-            <div class="col-span-12 sm:col-span-6 lg:col-span-3 bg-white shadow-sm p-4 rounded-xl">
+            <div id="history-parent" class="col-span-12 sm:col-span-6 lg:col-span-3 bg-white shadow-sm p-4 rounded-xl">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
                         <img src="./assets/clock.png" alt="">
                         <p class="font-medium text-lg">Call History</p>
                     </div>
-                    <button class="btn bg-[#00a63e] hover:bg-green-950 text-white rounded-3xl px-6">Clear</button>
+                    <button id="clear-btn" class="btn bg-[#00a63e] hover:bg-green-800 text-white rounded-3xl px-6">Clear</button>
                 </div>
+                <div id="block" style="display: none;">
+                    <div id="container">
+
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
