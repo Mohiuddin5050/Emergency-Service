@@ -20,7 +20,7 @@ for (const card of cardButton) {
     card.addEventListener("click", function () {
         const totalCoin = parseInt(document.getElementById("coin-count").innerText)
         if (totalCoin < 20) {
-            alert("You don't have enough coins, you need at least 20 coins to make a call.")
+            alert("❌ You don't have enough coins, you need at least 20 coins to make a call.")
             return
         }
 
@@ -30,7 +30,7 @@ for (const card of cardButton) {
         const serviceName = card.parentNode.parentNode.children[1].children[0].innerText;
         const serviceNumber = card.parentNode.parentNode.children[1].children[2].innerText;
         const time = new Date().toLocaleTimeString()
-        alert(`calling ${serviceName} ${serviceNumber}...`)
+        alert(`📞 calling ${serviceName} ${serviceNumber}...`)
         const container = getElement("container")
         const div = document.createElement("div")
         div.innerHTML = `<div class="flex justify-between items-center gap-2 pt-3">
@@ -56,8 +56,6 @@ copyButton.forEach((button) => {
         const totalCopy = parseInt(document.getElementById("copy-count").innerText);
         const totalCopyCount = totalCopy + 1;
         document.getElementById("copy-count").innerText = totalCopyCount;
-       
-
         const hotline = this.closest(".copy-parent").querySelector(".hotline").innerText
         navigator.clipboard.writeText(hotline);
         alert(`The number has been copied ${hotline}`)
