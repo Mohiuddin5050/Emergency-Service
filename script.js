@@ -23,7 +23,7 @@ for (const card of cardButton) {
             alert("You don't have enough coins, you need at least 20 coins to make a call.")
             return
         }
-        
+
         const totalCoinCount = totalCoin - 20
         document.getElementById("coin-count").innerText = totalCoinCount
         document.getElementById("block").style.display = "block"
@@ -47,8 +47,28 @@ for (const card of cardButton) {
     })
 
 }
+
+const copyButton = document.querySelectorAll(".copy-btn");
+const hotlines = document.querySelectorAll(".hotline");
+
+copyButton.forEach((button) => {
+    button.addEventListener("click", function () {
+        const totalCopy = parseInt(document.getElementById("copy-count").innerText);
+        const totalCopyCount = totalCopy + 1;
+        document.getElementById("copy-count").innerText = totalCopyCount;
+       
+
+        const hotline = this.closest(".copy-parent").querySelector(".hotline").innerText
+        navigator.clipboard.writeText(hotline);
+        alert(`The number has been copied ${hotline}`)
+    });
+});
+
+
+
+
+
+
 document.getElementById("clear-btn").addEventListener("click", function () {
-    document.getElementById("block").style.display = "none"
-    historyData.length = 0
     document.getElementById("container").innerHTML = ""
 })
